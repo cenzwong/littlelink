@@ -84,14 +84,20 @@ button:hover,
   filter: brightness(90%) }
 
 /* Hashnode (this is great for your own brand color!) */
-.button.button-default {
+.button.button-hashnode {
   color: #000000;
   background-color: #f5f7fa }
 .button.button-default:hover,
 .button.button-default:focus {
   filter: brightness(90%) }
 
-
+/* Email (this is great for your own brand color!) */
+.button.button-email {
+  color: #FFFFFF;
+  background-color: #0085FF }
+.button.button-default:hover,
+.button.button-default:focus {
+  filter: brightness(90%) }
 
 /* Discord */
 .button.button-discord {
