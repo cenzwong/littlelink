@@ -15,21 +15,39 @@ spec:
       required:
         - component_id
         - owner
-        - linkedin_url
-        - email_url
+        - code_avator_url
+        - code_your_name
+        - code_your_description
+        - code_linkedin_url
+        - code_email_url
+        - code_github_url
       properties:
         component_id:
           title: Name
           type: string
           description: Unique name of the component
-        linkedin_url:
+
+        code_your_name:
+          title: Tell me your name
+          type: string
+          description: Your Name, eg -> Cenz Wong
+        code_your_description:
+          title: One sentence about you
+          type: string
+          description: Your Description on Little Link, eg -> I am a boy.
+        code_linkedin_url:
           title: Your Linkedin URL
           type: string
-          description: Your Linkedin URL; https://www.linkedin.com/in/xxxxxx
-        email_url:
+          description: Your Linkedin URL; https://www.linkedin.com/in/cenzwong
+        code_email_url:
           title: Your Email
           type: string
-          description: Your Mail URL; peter@example.com          
+          description: Your Mail URL; cenz.wong@ekimetrics.com 
+        code_github_url:
+          title: Your Github
+          type: string
+          description: Your Github URL; https://www.github.com/cenzwong   
+          
         description:
           title: Description
           type: string
@@ -64,8 +82,14 @@ spec:
         values:
           component_id: '{{ parameters.component_id }}'
           description: '{{ parameters.description }}'
-          linkedin_url: '{{ parameters.linkedin_url }}'
-          email_url: '{{ parameters.email_url }}'
+
+          code_avator_url: '{{ parameters.code_avator_url }}'
+          code_your_name: '{{ parameters.code_your_name }}'
+          code_your_description: '{{ parameters.code_your_description }}'
+          code_linkedin_url: '{{ parameters.code_linkedin_url }}'
+          code_email_url: '{{ parameters.code_email_url }}'
+          code_github_url: '{{ parameters.code_github_url }}'
+
           destination: '{{ parseRepoUrl parameters.repoUrl }}'
           owner: '{{ parameters.owner }}'
 
