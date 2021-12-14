@@ -31,6 +31,10 @@ spec:
           title: Tell me your name
           type: string
           description: Your Name, eg -> Cenz Wong
+        code_avator_url:
+          title: URL for your icon
+          type: string
+          description: Your Avator URL, eg -> https://github.com/cenzwong/cenzwong/blob/main/Profile%20Pic/profile-pic%20(1).png?raw=true
         code_your_description:
           title: One sentence about you
           type: string
